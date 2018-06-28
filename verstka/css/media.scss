@@ -1,0 +1,277 @@
+﻿/*вертикальный телефон*/
+@media only screen and (max-width: 460px) {
+  body {
+    >header {
+      .container {
+        .header-left {
+          .logo {
+            img {
+              display: none;
+            }
+
+            .logo-text {
+              p {
+                font-size: 19px;
+              }
+            }
+          }
+        }
+
+        .header-right {
+          p {
+            font-size: 14px;
+            display: none;
+          }
+        }
+      }
+    }
+
+    >main {
+      .banner {
+        .container {
+          .banner-right {
+            .order {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      #trigger {
+        .container {
+          .trigger-item {
+            width: 100%;
+            margin-bottom: 20px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    >footer {}
+  }
+
+}
+
+/*горизонтальный телефон*/
+@media only screen and (min-width: 461px) and (max-width: 767px) {
+  body {
+    >main {
+      #certificates {
+        .container {
+          .slider {
+            .owl-carousel {
+              .owl-nav {
+                .owl-prev {
+                  left: -40px;
+                }
+                .owl-next {
+                  right: -40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*весь телефон*/
+@media only screen and (max-width: 767px) {
+  body {
+    >header{
+      .container {
+        .header-left {
+          .logo {
+            .phone {
+              font: $fontSize RobotoBold;
+              color: $colorTitle;
+            }
+          }
+        }
+        .header-right {
+          .mobile-button {
+            height: 30px;
+            width: 30px;
+            background-image: url("../images/mobile_menu_bg.jpg");
+            float: right;
+          }
+          .menu {
+            display: none;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+
+    >main {
+      .banner {
+        height: 480px;
+        .container {
+          @include vertical-center();
+          left: 0;
+          .banner-left {
+            .banner-text {
+              .building {
+                font-size: 35px;
+              }
+              .price {
+                font-size: 20px;
+              }
+            }
+          }
+          .banner-right {
+            .order {
+              float: none;
+              margin: 0 auto;
+              margin-top: 15px;
+
+            }
+          }
+        }
+      }
+
+      #trigger {
+        .container {
+          .trigger-item {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*вертикальный планшет*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    >header{
+      .container {
+        .header-left {
+          .logo {
+            .phone {
+              display: none;
+            }
+          }
+        }
+        .header-right {
+          .mobile-button {
+            height: 30px;
+            width: 30px;
+            background-image: url("../images/mobile_menu_bg.jpg");
+            float: right;
+          }
+          .menu {
+            display: none;
+          }
+        }
+      }
+    }
+
+    >main {
+      .banner {
+        .container {
+          .banner-right {
+            .order {
+              float: none;
+              margin: 0 auto;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+
+      #certificates {
+        .container {
+          .slider {
+            .owl-carousel {
+              .owl-nav {
+                .owl-prev {
+                  left: -70px;
+                }
+                .owl-next {
+                  right: -70px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+    >footer {}
+  }
+
+/*горизонтальный планшет*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+      > header {
+        .container {
+          .header-left {
+            .logo {
+              .phone {
+                display: none;
+              }
+              .logo-text {
+                p {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+
+          .header-right {
+            .mobile-button { display: none; }
+            .menu {
+              li {
+                font-size: 16px;
+                a {
+                padding: 0px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    >main {
+      .banner {
+        height: 580px;
+      }
+    }
+  }
+}
+
+/*весь планшет*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+/*десктоп*/
+@media only screen and (min-width: 1200px) {
+  body {
+    >header {
+      .container {
+        .header-left {
+          .logo {
+            .phone {
+              display: none;
+            }
+          }
+        }
+        .header-right {
+          .mobile-button { display: none; }
+        }
+      }
+    }
+  }
+}

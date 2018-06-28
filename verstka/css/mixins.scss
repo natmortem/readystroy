@@ -1,0 +1,43 @@
+@mixin font-face($folder, $nameFile, $nameFont) {
+  @font-face {
+    font-family: '#{$nameFont}';
+    src: url('#{$folder}/#{$nameFile}.eot');
+    src:
+            url('#{$folder}/#{$nameFile}.eot?#iefix') format('embedded-opentype'),
+            url('#{$folder}/#{$nameFile}.woff2') format('woff2'),
+            url('#{$folder}/#{$nameFile}.woff') format('woff'),
+            url('#{$folder}/#{$nameFile}.ttf')  format('truetype'),
+            url('#{$folder}/#{$nameFile}.svg#'+ $nameFont) format('svg');
+  }
+}
+
+@mixin image-responsive() {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
